@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    
+    <nav class="navbar">
+        <div class="abc">
+        <h1>Aritficial intelligence<h3>Assignment-4</h3></h1>
+    </div>
+    
+
+        <div class="nav-links">
+            <p class="nav-link"><a href="#definition">Definition</a></p>
+            <p class="nav-link"><a href="#atp">ATP</a></p>
+            <p class="nav-link"><a href="#tp">Touring Problem</a></p>
+        </div>
+
+        <div class="navbar-menu-toogle" onclick="shownavbar()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+    <div class="side-navbar">
+        <p style="text-align: right;">
+            <i class="fa-solid fa-xmark" onclick="closenavbar()"></i>
+        </p>
+        <div class="side-nav-links">
+            <p class="side-nav-link"><a href="#definition">Definition</a></p>
+            <p class="side-nav-link"><a href="#atp">ATP</a></p>
+            <p class="side-nav-link"><a href="#tp">Touring problem</a></p>
+        </div>
+    </div>
+    <div class="apple">
+    <div class=header id="definition">
+        <div>
+            <h1>Real-World Problems </h1>
+            <h3>Route-Finding Problem</h3>
+            <p>Route-finding problem is defined in terms of specified locations and transitions along links 
+                between them. Route-finding algorithms are used in a variety of applications,such as routing in 
+                computer networks,military operations planning,and air line travel planning systems.
+                </p>
+            
+        </div>
+        <div class="header-image">
+            <img src="image.jpg">
+        </div>
+    </div>
+
+    <div id="atp" >
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <h1 class=sub-tittle>Airline Travel Problem</h1>
+                    <p>The airline travel problem is specifies as follows :
+                    </p>
+                    <div class="tab-tittles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">State</p>
+                        <p class="tab-links" onclick="opentab('experience')">Initial state</p>
+                        <p class="tab-links" onclick="opentab('education')">Successor function</p>
+                        <p class="tab-links" onclick="opentab('goal')">Goal Teat</p>
+                        <p class="tab-links" onclick="opentab('path')">Path cost</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span> Each is represented by a location(e.g.,an airport) and the current time.
+                            </span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>This is specified by the problem.
+                            </span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>This returns the states resulting from taking any scheduled 
+                                flight(further specified by seat class and location),leaving later than the current time plus 
+                                the within-airport transit time,from the current airport to another.
+                                </span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="goal">
+                        <ul>
+                            <li><span>Are we at the destination by some prespecified time?</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="path">
+                        <ul>
+                            <li><span>This depends upon the monetary cost,waiting time,flight time,customs and 
+                                immigration procedures,seat quality,time of dat,type of air plane,frequent-flyer mileage
+                                awards, and so on.
+                                </span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="one" id="tp">
+<div class="service" style="padding: 40px;">
+    <div class="service-container-1">
+        <div>
+            <h2>Touring Problems:</h2>
+        </div>
+        <div>
+            <p>|| we ensure that are customerhave the best shoping experience</p>
+        </div>
+    </div>
+    <div class="service-container-2">
+        <div>
+            <h4>Tourning problems:</h4>
+            <p>Touring problems are closely related to route-finding problems,but with an important difference.
+                Consider for example,the problem,”Visit every city at least once” as shown in Romania map.
+                As with route-finding the actions correspond to trips between adjacent cities. The state space, 
+                however,is quite different.
+                </p>
+        </div>
+        <div>
+            <h4>TSP:</h4>
+            <p> Is a touring problem in which each city must be visited exactly once. The aim is to find the 
+                shortest tour.The problem is known to be NP-hard. Enormous efforts have been expended to 
+                improve the capabilities of TSP algorithms. These algorithms are also used in tasks such as 
+                planning movements of automatic circuit-board drills and of stocking machines on shop floors.</p>
+        </div>
+        <div>
+            <h4>VLSI layout:</h4>
+            <p>A VLSI layout problem requires positioning millions of components and connections on a chip 
+                to minimize area ,minimize circuit delays,minimize stray capacitances,and maximize
+                manufacturing yield. The layout problem is split into two parts : cell layout and channel 
+                routing.
+                </p>
+        </div>
+        <div>
+            <h4>ROBOT navication:</h4>
+            <p>ROBOT navigation is a generalization of the route-finding problem. Rather than a discrete set 
+                of routes,a robot can move in a continuous space with an infinite set of possible actions and 
+                states. For a circular Robot moving on a flat surface,the space is essentially two-dimensional.
+                When the robot has arms and legs or wheels that also must be controlled,the search space
+                becomes multi-dimensional. Advanced techniques are required to make the search space finite.  
+                </p>
+        </div>
+        <div>
+            <h4>AAC:</h4>
+            <p>The example includes assembly of intricate objects such as electric motors. The aim in assembly
+                problems is to find the order in which to assemble the parts of some objects. If the wrong order 
+                is choosen,there will be no way to add some part later without undoing somework already done.
+                Another important assembly problem is protein design,in which the goal is to find a sequence of 
+                Amino acids that will be fold into a three-dimensional protein with the right properties to cure
+                some disease.
+                 
+                </p>
+        </div>
+        <div>
+            <h4>Internet Searching:</h4>
+            <p>In recent years there has been increased demand for software robots that perform Internet 
+                searching.,looking for answers to questions,for related information,or for shopping deals. The 
+                searching techniques consider internet as a graph of nodes(pages) connected by links.
+                </p>
+        </div>
+    </div>
+</div>
+</div>
+    
+
+    <div class="footer">
+        <div class="footer-container">
+            <div class="footer-box-1">
+                <h2 class="heading-text">Solidarity</h2>
+                <p>made with ❤️ solidarity team</p>
+                
+            </div>
+        </div>
+        <p>@ 2024 solidarity.com</p>
+    </div>
+</div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
